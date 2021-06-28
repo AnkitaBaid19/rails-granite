@@ -10,3 +10,6 @@ import "../stylesheets/application.scss";
 var componentRequireContext = require.context("src", true);
 Rails.start();
 ActiveStorage.start();
+// Support component names relative to this directory:
+var ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(componentRequireContext);
