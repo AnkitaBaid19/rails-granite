@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
     tasks = Task.all
 
-    render status: :ok, json: { tasks: tasks }
+  render status: :ok, json: { tasks: tasks }
 
   end
 end
